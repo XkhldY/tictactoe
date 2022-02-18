@@ -1,0 +1,6 @@
+/* Variables */
+:root {
+  --color-primary: hsl(198, 74%, 54%);
+  --color-gray: #ddd;
+  --color-gray-dark: #666;
+}

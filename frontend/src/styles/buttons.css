@@ -1,0 +1,16 @@
+/* Button */
+.btn {
+  display: inline-block;
+  padding: 12px 18px;
+  font-size: 15px;
+  color: #fff;
+  background-color: var(--color-primary);
+  border: 0;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: all .25s ease-out;
+}
+
+.btn:hover {
+  background-color: hsl(198, 74%, 34%);
+}
