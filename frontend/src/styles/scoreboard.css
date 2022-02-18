@@ -1,5 +1,4 @@
-Scoreboard
-.scoreboard__title {
+Scoreboard .scoreboard__title {
   text-align: center;
 }
 
@@ -28,7 +27,7 @@ Scoreboard
   border-right: 0;
   border-bottom: 1px solid var(--color-gray);
   border-left: 0;
-  transition: all .25s ease-out;
+  transition: all 0.25s ease-out;
 }
 
 .scoreboard__input:focus,

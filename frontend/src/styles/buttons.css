@@ -8,7 +8,7 @@
   border: 0;
   border-radius: 4px;
   text-decoration: none;
-  transition: all .25s ease-out;
+  transition: all 0.25s ease-out;
 }
 
 .btn:hover {
