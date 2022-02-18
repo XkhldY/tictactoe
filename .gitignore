@@ -1,1 +1,3 @@
 /frontend/node_modules/
+/backend/tictactoe/__pycache__/
+/backend/backend/__pycache__/
