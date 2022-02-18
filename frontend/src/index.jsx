@@ -19,12 +19,18 @@ class App extends React.Component {
     playerTwoName: 'Eid'
   }
 
+  handlePlayerNameChange = (stateKey, stateValue) => {
+    this.setState({
+      [stateKey]: stateValue
+    })
+  }
+
   render() {
     return (
       <div className="app">
         <BrowserRouter>
-          <Route exact path="/" render={() => <Scoreboard state={this.state}  />}/>
-          <Route path="/board" render={() => <Board state={this.state} />}/>
+          <Route exact path="/" render={() => <Scoreboard state={this.state} nameChangeHandler={this.handlePlayerNameChange} />}/>
+          <Route path="/board" render={() => <Board state={this.state} nameChangeHandler={this.handlePlayerNameChange} />}/>
         </BrowserRouter>
       </div>
     )

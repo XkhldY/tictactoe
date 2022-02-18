@@ -1,6 +1,7 @@
 from django.test import TestCase
 from .models import Scoreboard
 
+
 # Create your tests here.
 class ScoreboardTestCase(TestCase):
     def setUp(self) -> None:

@@ -18,13 +18,13 @@ export class Scoreboard extends React.Component {
   }
 
   refreshList = () => {
-    const li = []
+    const score_list = []
     axios.get('http://localhost:8000/api/scoreboard/')
       .then(response => {
-        Promise.all(response.data.map((historyItem) => {
-          return li.push([historyItem.player_name, historyItem.score])}));
+        Promise.all(response.data.map((scoreboard) => {
+          return score_list.push([scoreboard.player_name, scoreboard.score])}));
     
-    this.setState({scoreboard: li})
+    this.setState({scoreboard: score_list})
     })
   }
 
@@ -86,17 +86,17 @@ export class Scoreboard extends React.Component {
                <td bgcolor="LightBlue">score</td>
                </tr>
                {this.state.scoreboard.map((leader, key) => {
-              
+
                 return <tr key={key}>
                   <td>{leader[0]}</td>
                   <td>{leader[1]}</td>
-               
+
                       </tr>
                 })}
                </tbody>
             </table>
 
-            
+
 
         </ul>}
       </div>
