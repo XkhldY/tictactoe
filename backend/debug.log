@@ -1,0 +1,49 @@
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Not Found: /api/scoreboard/
+"GET /api/scoreboard/ HTTP/1.1" 404 2123
+Not Found: /api/board/
+"POST /api/board/ HTTP/1.1" 404 2109
+/Users/khaled/PycharmProjects/tictactoe/backend/backend/urls.py changed, reloading.
+Watching for file changes with StatReloader
+Bad Request: /api/board/
+"POST /api/board/ HTTP/1.1" 400 77
+"GET /api/scoreboard/ HTTP/1.1" 200 2
+"OPTIONS /api/board/ HTTP/1.1" 200 172
+"OPTIONS /api/board/ HTTP/1.1" 200 172
+"OPTIONS /api/board/ HTTP/1.1" 200 172
+"OPTIONS /api/scoreboard/ HTTP/1.1" 200 177
+"GET /api/scoreboard/ HTTP/1.1" 200 2
+Internal Server Error: /api/scoreboard/
+Traceback (most recent call last):
+  File "/Users/khaled/.local/share/virtualenvs/tictactoe-S3PUtQox/lib/python3.7/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/Users/khaled/.local/share/virtualenvs/tictactoe-S3PUtQox/lib/python3.7/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/khaled/.local/share/virtualenvs/tictactoe-S3PUtQox/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/khaled/.local/share/virtualenvs/tictactoe-S3PUtQox/lib/python3.7/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/khaled/.local/share/virtualenvs/tictactoe-S3PUtQox/lib/python3.7/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/khaled/.local/share/virtualenvs/tictactoe-S3PUtQox/lib/python3.7/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/khaled/.local/share/virtualenvs/tictactoe-S3PUtQox/lib/python3.7/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/khaled/.local/share/virtualenvs/tictactoe-S3PUtQox/lib/python3.7/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/khaled/PycharmProjects/tictactoe/backend/tictactoe/views.py", line 52, in post
+    player, created = Scoreboard.objects.get_or_create(player_name=data['player_name'])
+KeyError: 'player_name'
+"POST /api/scoreboard/ HTTP/1.1" 500 86760
+"GET /api/scoreboard/ HTTP/1.1" 200 2
+"GET /api/scoreboard/ HTTP/1.1" 200 2
+Watching for file changes with StatReloader
+"GET /api/scoreboard/ HTTP/1.1" 200 2
+"OPTIONS /api/board/ HTTP/1.1" 200 172
+Watching for file changes with StatReloader
+"POST /api/board/ HTTP/1.1" 200 44
